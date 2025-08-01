@@ -2,70 +2,120 @@ const accomodations = [
   {
     id: 1,
     category: "Hotel",
-    image:
-      "https://res.cloudinary.com/dnqhrr6jk/image/upload/f_auto,q_auto/v1/Lewen%20Tours/radisson1_gceval",
+    image: "https://res.cloudinary.com/dnqhrr6jk/image/upload/f_auto,q_auto/v1/Lewen%20Tours/radisson1_gceval",
     title: "Radisson Blu Hotel & Convention Centre, Kigali",
-    location: "Kigali City",
+    location: "Kigali Roundabout , Kigali, Rwanda",
     starsNo: 4.5,
     reviewsNo: 1644,
-    description: `The Radisson Blu Hotel & Convention Centre, Kigali features
-                  291 rooms for business or leisure travelers, complete with
-                  free Wi-Fi and in-room coffee and tea facilities.`,
+    price: "$120/night",
+    gallery: [
+      "https://images.getaroom-cdn.com/image/upload/s--9UaKFHgL--/c_limit,e_improve,fl_lossy.immutable_cache,h_940,q_auto:good,w_940/v1751880658/ace231ea9d2f0daf416cb36193e506ab1fcdd85e",
+      "https://images.getaroom-cdn.com/image/upload/s--c7-vUG3M--/c_limit,e_improve,fl_lossy.immutable_cache,h_460,q_auto:good,w_460/v1751880658/fc073101d827cef6006db6d11f852883f0005681",
+      "https://images.getaroom-cdn.com/image/upload/s--3s89XX2S--/c_limit,e_improve,fl_lossy.immutable_cache,h_940,q_auto:good,w_940/v1751880661/463b48bd83a548093835b591d06b7ca6439908c9",
+      "https://images.getaroom-cdn.com/image/upload/s--sym4jO4z--/c_limit,e_improve,fl_lossy.immutable_cache,h_940,q_auto:good,w_940/v1750033898/194eaae75f7f4d2f08c27b8030cdefd1d77342b4",
+      "https://images.getaroom-cdn.com/image/upload/s--VY6HB8Jq--/c_limit,e_improve,fl_lossy.immutable_cache,h_940,q_auto:good,w_940/v1751880668/ffbbf1dbf7eb9b9d221b68dc27666203348550fc",
+      "https://images.getaroom-cdn.com/image/upload/s--UZV-0XIT--/c_limit,e_improve,fl_lossy.immutable_cache,h_940,q_auto:good,w_940/v1750033896/e6ba914c51a8c8ba967f4d6ee3179befa5b656e6"
+    ],
+    description: `The Radisson Blu Hotel & Convention Centre, Kigali features 291 rooms for business or leisure travelers, complete with free Wi-Fi and in-room coffee and tea facilities.`,
   },
   {
     id: 2,
     category: "Hotel",
-    image:
-      "https://res.cloudinary.com/dnqhrr6jk/image/upload/f_auto,q_auto/v1/Lewen%20Tours/five2five_ex2kms",
+    image: "https://res.cloudinary.com/dnqhrr6jk/image/upload/f_auto,q_auto/v1/Lewen%20Tours/five2five_ex2kms",
     title: "Five To Five Hotel",
-    location: "Remera, Kigali, Rwanda",
+    location: "Kg 213 St, Kigali, 250, Rwanda",
     starsNo: 4.5,
     reviewsNo: 518,
+    price: "$100/night",
+    gallery: [
+      "https://images.getaroom-cdn.com/image/upload/s--8dTTOUzE--/c_limit,e_improve,fl_lossy.immutable_cache,h_460,q_auto:good,w_460/v1721514800/3691575aa105f66e3532d4188e79437a4cffd301?_a=BACAEuDL&atc=e7cd1cfa",
+      "https://images.getaroom-cdn.com/image/upload/s--y9h0cR4T--/c_limit,e_improve,fl_lossy.immutable_cache,h_460,q_auto:good,w_460/v1721514796/a7f252e05e2413194928205f33ca9e3be4c1b4f0?_a=BACAEuDL&atc=e7cd1cfa",
+      "https://images.getaroom-cdn.com/image/upload/s--jziWUiY6--/c_limit,e_improve,fl_lossy.immutable_cache,h_940,q_auto:good,w_940/v1721514800/8ddd27298d75c6fb731a8e99d3665103d4a0327c?_a=BACAEuDL&atc=e7cd1cfa",
+      "https://images.getaroom-cdn.com/image/upload/s--Pb0hkECR--/c_limit,e_improve,fl_lossy.immutable_cache,h_460,q_auto:good,w_460/v1726832267/98f1520808796f70813adc23b493b13a85e01667?_a=BACAEuDL&atc=e7cd1cfa",
+      "https://images.getaroom-cdn.com/image/upload/s--hxLtiCsf--/c_limit,e_improve,fl_lossy.immutable_cache,h_460,q_auto:good,w_460/v1726832272/aeab71ff8cbcbd409f49f7524718c957e162a942?_a=BACAEuDL&atc=e7cd1cfa",
+      "https://images.getaroom-cdn.com/image/upload/s--_uJjLwun--/c_limit,e_improve,fl_lossy.immutable_cache,h_460,q_auto:good,w_460/v1712675530/16231b1a0738b6ae31a55333e17af60c2ffd0de7?_a=BACAEuDL&atc=e7cd1cfa"
+    ],
     description: `The Five to Five Hotel offers amenities such as free Wi-Fi, a fitness center, a rooftop terrace, a restaurant, and a bar.`,
   },
   {
     id: 3,
     category: "Hotel",
-    image:
-      "https://res.cloudinary.com/dnqhrr6jk/image/upload/f_auto,q_auto/v1/Lewen%20Tours/hotel-exterior_vgnmmn",
+    image: "https://res.cloudinary.com/dnqhrr6jk/image/upload/f_auto,q_auto/v1/Lewen%20Tours/hotel-exterior_vgnmmn",
     title: "Kigali Marriott Hotel",
     location: "Nyarugenge, Kigali, Rwanda",
     starsNo: 4.5,
     reviewsNo: 638,
+    price: "$150/night",
+    gallery: [
+      "https://cf.bstatic.com/xdata/images/hotel/max500/467173987.jpg?k=96862d86ff8d2049f2e79760993911b73025a58f3ff00d3cf90c9623334d4fa6&o=",
+      "https://cf.bstatic.com/xdata/images/hotel/max300/487588430.jpg?k=43b24ee555714f8b08b883f72b4a6c298e423723f05446e7c08df86b26af44e9&o=",
+      "https://cf.bstatic.com/xdata/images/hotel/max300/467730402.jpg?k=e23e232af45273deb4cb44060575d40ea9d134f45f5acf027ab60a555fd361a1&o=",
+      "https://cf.bstatic.com/xdata/images/hotel/max300/645294312.jpg?k=9de9442d60350966a7280c3adae1dba40aecf5311d3267dbb0436c6aabc88d82&o=",
+      "https://cf.bstatic.com/xdata/images/hotel/max300/645294342.jpg?k=63724771924f638396ee6b27fca8958d79db7696cd690be460729d73a3cc8000&o=",
+      "https://cf.bstatic.com/xdata/images/hotel/max1024x768/467173984.jpg?k=f4552e786491a221e405a523735f13962bc8ffae83a7850cdd452a6149e52008&o="
+
+    ],
     description: `Kigali Marriott Hotel Kigali offers a range of amenities including a fitness center, outdoor pool, spa, multiple dining options, and meeting/event spaces.`,
   },
   {
     id: 4,
     category: "Hotel",
-    image:
-      "https://res.cloudinary.com/dnqhrr6jk/image/upload/f_auto,q_auto/v1/Lewen%20Tours/sheraton_ujfdzz",
+    image: "https://res.cloudinary.com/dnqhrr6jk/image/upload/f_auto,q_auto/v1/Lewen%20Tours/sheraton_ujfdzz",
     title: "Four Points by Sheraton Kigali",
     location: "Nyarugenge, Kigali, Rwanda",
     starsNo: 4.5,
     reviewsNo: 114,
-    description: `Four Points by Sheraton Kigali features accommodation with an outdoor swimming pool, free private parking, a fitness centre and a terrace. With a restaurant, the 5-star hotel has air-conditioned rooms with free WiFi, each with a private bathroom`,
+    price: "$130/night",
+    gallery: [
+      "https://cache.marriott.com/is/image/marriotts7prod/fp-kglfp-suite-bedroom-41271:Classic-Hor?output-quality=90&interpolation=progressive-bilinear&downsize=562px:366px",
+      "https://cache.marriott.com/is/image/marriotts7prod/fp-kglfp-family-suite-24648-00168:Classic-Hor?output-quality=90&interpolation=progressive-bilinear&downsize=562px:366px",
+      "https://cache.marriott.com/is/image/marriotts7prod/fp-kglfp-outdoor-pool-12538:Classic-Hor?output-quality=90&interpolation=progressive-bilinear&downsize=562px:366px",
+      "https://cache.marriott.com/is/image/marriotts7prod/mc-kglmc-fp-social-restaurant-24966:Classic-Hor?output-quality=90&interpolation=progressive-bilinear&downsize=562px:366px",
+      "https://cache.marriott.com/is/image/marriotts7prod/fp-kglfp-ballroom-40905:Classic-Hor?output-quality=90&interpolation=progressive-bilinear&downsize=562px:366px",
+      "https://cache.marriott.com/is/image/marriotts7prod/fp-kglfp-simba-foyer-41501:Classic-Hor?output-quality=90&interpolation=progressive-bilinear&downsize=562px:366px"
+    ],
+    description: `Four Points by Sheraton Kigali features accommodation with an outdoor swimming pool, free private parking, a fitness centre and a terrace.`,
   },
   {
     id: 5,
     category: "Hotel",
-    image:
-      "https://res.cloudinary.com/dnqhrr6jk/image/upload/f_auto,q_auto/v1/Lewen%20Tours/cleo_odx8tz",
+    image: "https://res.cloudinary.com/dnqhrr6jk/image/upload/f_auto,q_auto/v1/Lewen%20Tours/cleo_odx8tz",
     title: "Cleo Lake Kivu Hotel",
     location: "Bwishyura, Karongi, Rwanda",
     starsNo: 4.5,
     reviewsNo: 114,
+    price: "$140/night",
+    gallery: [
+      "https://cf.bstatic.com/xdata/images/hotel/max500/322352714.jpg?k=fea8b2bc7eed2f30ab339455034e31ef5b2b7fbc6b08b7f4bf88a02199335a61&o=",
+      "https://cf.bstatic.com/xdata/images/hotel/max300/322350502.jpg?k=8d8c9b1d40ed4c69dfe7060577d10c3e54af2b984d129eda61ce1bb343414edf&o=",
+      "https://cf.bstatic.com/xdata/images/hotel/max300/323705312.jpg?k=b6a13f0dd3fceeec378cc5b5ffbc9cd0f8659fb6489cde5c5fd1cc925240d708&o=",
+      "https://cf.bstatic.com/xdata/images/hotel/max1024x768/323706462.jpg?k=aa075e60f266e8c2af50ca6d2857e6e2fd01c3bd343159d3c211cd69bd77e515&o=",
+      "https://cf.bstatic.com/xdata/images/hotel/max1024x768/407978498.jpg?k=e9092a932820e7435172d2a73d19d69ab4f4ed6336c1da70f2f9dca712e0956c&o=",
+      "https://cf.bstatic.com/xdata/images/hotel/max1024x768/322350378.jpg?k=c3764de1404c1bfd240abb2a68ea75ca73b39d49df349c76a5f91aeffd961953&o=",
+      "https://cf.bstatic.com/xdata/images/hotel/max1024x768/323706831.jpg?k=e1f6d21785b9adf799e8333e88181308ac889d9687ddd3569605e118f178477d&o=",
+      "https://cf.bstatic.com/xdata/images/hotel/max1024x768/323702500.jpg?k=952f79525ca6aac27dab9280bde9c036b887230297a398ca0c1a17b4f88173bf&o="
+    ],
     description: `Cleo Lake Kivu Hotel offers a range of amenities including an outdoor pool, fitness center, spa, restaurant, bar, conference facilities, and free Wi-Fi.`,
   },
   {
     id: 6,
     category: "Apartment",
-    image:
-      "https://res.cloudinary.com/dnqhrr6jk/image/upload/f_auto,q_auto/v1/Lewen%20Tours/atlis_apart_pbmwzz",
+    image: "https://res.cloudinary.com/dnqhrr6jk/image/upload/f_auto,q_auto/v1/Lewen%20Tours/atlis_apart_pbmwzz",
     title: "Altis Apartments",
     location: "Bwishyura, Karongi, Rwanda",
     starsNo: 4.5,
     reviewsNo: 114,
-    description: `Altis Apartments is an eight-storey building opening on a panoramic view of Kigali Mountain, historically giving name to the city. The apartments are fully furnished and located at a walking distance to major supermarket of Kigali`,
+    price: "$90/night",
+    gallery: [
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f5/77/ab/relax-in-your-seating.jpg?w=1400&h=-1&s=1",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f5/77/a4/feel-home-away-home-inyour.jpg?w=1400&h=-1&s=1",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f5/67/c8/altis-apartments.jpg?w=1400&h=-1&s=1",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f5/77/97/7.jpg?w=1400&h=-1&s=1",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f5/77/8a/altis-apartments.jpg?w=1400&h=1400&s=1",
+      "",
+
+    ],
+    description: `Altis Apartments is an eight-storey building opening on a panoramic view of Kigali Mountain. The apartments are fully furnished and near major supermarkets.`,
   },
   {
     id: 7,
@@ -75,28 +125,59 @@ const accomodations = [
     location: "Bwishyura, Karongi, Rwanda",
     starsNo: 4.5,
     reviewsNo: 114,
-    description: `Grazia Hotel & Apartments is located near Kigali Convention Centre. It has 50 air-conditioned rooms featuring LED televisions. Your memory foam bed comes with Egyptian cotton sheets`,
+    price: "$85/night",
+    gallery: [
+      "https://images.trvl-media.com/lodging/84000000/83150000/83140700/83140620/8c059729.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+      "https://images.trvl-media.com/lodging/84000000/83150000/83140700/83140620/ec03dcf2.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+      "https://images.trvl-media.com/lodging/84000000/83150000/83140700/83140620/2b9b93cf.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+      "https://images.trvl-media.com/lodging/84000000/83150000/83140700/83140620/6570deeb.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+      "https://images.trvl-media.com/lodging/84000000/83150000/83140700/83140620/3259b220.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+      "https://images.trvl-media.com/lodging/84000000/83150000/83140700/83140620/aef27270.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+      "https://images.trvl-media.com/lodging/84000000/83150000/83140700/83140620/03daa2b1.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+      
+    ],
+    description: `Grazia Hotel & Apartments is located near Kigali Convention Centre. It has 50 air-conditioned rooms with LED TVs and Egyptian cotton sheets.`,
   },
   {
     id: 8,
     category: "Apartment",
     image: "https://cf.bstatic.com/xdata/images/hotel/max1024x768/553481795.jpg?k=bd177f6c5936a091bc4ffae97ea5d0c065d3b9e2a0909b984981c9da82f93df0&o=",
     title: "M hotel",
-    location: "kigali,  Rwanda",
+    location: "Kigali, Rwanda",
     starsNo: 4.5,
     reviewsNo: 114,
-    description: `Rentberry is a platform that helps you find apartments available for rent in Kigali, Rwanda. You can discover apartments available for rent using their convenient search. Schedule a tour, apply online and secure your future apartment near Kigali, Rwanda`,
+    price: "$80/night",
+    gallery: [
+      "https://cf.bstatic.com/xdata/images/hotel/max300/553707262.jpg?k=6e874842c009533fe0fde59879bf5f9c941e9c693eeb1d0d2796e6846deede6f&o=",
+      "https://cf.bstatic.com/xdata/images/hotel/max300/626899017.jpg?k=91c56bb4007d4de035a07b26d2f652178552ddf70d3869e82e94613a58d38367&o=",
+      "https://cf.bstatic.com/xdata/images/hotel/max300/551657575.jpg?k=43c14f2df583acbf2e330cb26e196d45c223b77ef762c4a5e822a084a3bac3e9&o=",
+      "https://cf.bstatic.com/xdata/images/hotel/max300/362191975.jpg?k=c20376145e0dc6241f7fd9609bd11390ad30a502005f458a5dad2bc324521221&o=",
+      "https://cf.bstatic.com/xdata/images/hotel/max500/626919293.jpg?k=e5dfd2f30a2286fdc0f54b3a014c166c523efd13012561e0a7cc664a8a27258d&o=",
+      "https://cf.bstatic.com/xdata/images/hotel/max1024x768/464091776.jpg?k=abd614572359fb6b25ee3c6f6283b43cb3d72c5d2ac748853bb464e824610501&o=",
+      "https://cf.bstatic.com/xdata/images/hotel/max1024x768/551657227.jpg?k=2bb83ba9f6bbb9aae4c2fa5946f42a60a63c604ed90b8507808ca27ce00a83b4&o=",
+      "https://cf.bstatic.com/xdata/images/hotel/max1024x768/464091759.jpg?k=19839411ef143262938b9f925cfbed47c2cddbcd6230df8b92316b687f076e33&o="
+    ],
+    description: `M Hotel offers well-equipped apartments with easy access to the city. Rentberry helps schedule tours and secure your future apartment near Kigali.`,
   },
   {
     id: 9,
     category: "Apartment",
     image: "https://cf.bstatic.com/xdata/images/hotel/max1024x768/115439638.jpg?k=395090a073f7e74b9cdc286ce83047c1efc8a7556b0f79ac74ba81921c4fb2ad&o=",
-    title: "2000 Hotel Downtown kigali",
-    location: "Bwishyura, Karongi, Rwanda",
+    title: "2000 Hotel Downtown Kigali",
+    location: "Kigali, Rwanda",
     starsNo: 4.5,
     reviewsNo: 114,
-    description: `Rentberry is a platform that helps you find apartments available for rent in Kigali, Rwanda. You can discover apartments available for rent using their convenient search. Schedule a tour, apply online and secure your future apartment near Kigali, Rwanda`,
+    price: "$95/night",
+    gallery: [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+    ],
+    description: `2000 Hotel Downtown Kigali is conveniently located. Use Rentberry to schedule tours, apply online, and find your next apartment in Kigali.`,
   },
 ];
 
-  export default accomodations;
+export default accomodations;

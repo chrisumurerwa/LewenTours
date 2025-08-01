@@ -13,6 +13,7 @@ import Top10DetailsTravel from "./Pages/Top10TravelDetails";
 import Accomodations from "./Pages/Accomodations";
 import Hotels from "./Pages/Hotels";
 import Apartments from "./Pages/Apartments";
+import AccomodationDetails from "./Pages/AccomodationDetails";
 import HeaderAndFooter from "./Pages/HeaderAndFooter";
 import Services from "./Pages/Services";
 import Booking from "./Pages/Booking";
@@ -36,6 +37,7 @@ function App() {
             <Route path="/accomodations" element={<Accomodations />} />
             <Route path="/hotels" element={<Hotels />} />
             <Route path="/apartments" element={<Apartments />} />
+            <Route path="/accomodation/:id" element={<AccomodationDetails />} />
             <Route path="/services" element={<Services />} />
             <Route path="/booking" element={<Booking />} />
             <Route path="/flights" element={<Flights />} />

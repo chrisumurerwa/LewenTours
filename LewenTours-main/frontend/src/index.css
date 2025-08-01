@@ -110,6 +110,9 @@ body{
   margin:20px 20px 0 0;
   z-index:25;
 }
+.details-container img {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
 
 #accomodations .accomodation_container .main_content {
   width: 73%;
