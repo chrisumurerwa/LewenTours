@@ -25,7 +25,7 @@ const Apartments = () => {
             <h2 className="title">Apartments</h2>
           </div>
           <div className="main_content">
-            <MainContent />
+            <MainContent category="Apartments" />
           </div>
         </div>
       </section>

@@ -23,10 +23,10 @@ const Hotels = () => {
         <section id="hotels">
             <div className="accomodation_container">
                 <div className="sticky_card">
-                    <h2 className="title">Hotels</h2>
+                    <h2 className="title">hotels</h2>
                 </div>
                 <div className="main_content">
-                    <MainContent />
+                    <MainContent category="Hotels" />
                 </div>
             </div>
         </section>

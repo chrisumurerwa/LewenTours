@@ -23,11 +23,8 @@ const accomodations = [
     category: "Hotel",
     image: "https://res.cloudinary.com/dnqhrr6jk/image/upload/f_auto,q_auto/v1/Lewen%20Tours/five2five_ex2kms",
     title: "Five To Five Hotel",
-    location: "Kg 213 St, Kigali, 250, Rwanda",
-    starsNo: 4.5,
-    reviewsNo: 518,
-    price: "$100/night",
-    gallery: [
+
+      gallery: [
       "https://images.getaroom-cdn.com/image/upload/s--8dTTOUzE--/c_limit,e_improve,fl_lossy.immutable_cache,h_460,q_auto:good,w_460/v1721514800/3691575aa105f66e3532d4188e79437a4cffd301?_a=BACAEuDL&atc=e7cd1cfa",
       "https://images.getaroom-cdn.com/image/upload/s--y9h0cR4T--/c_limit,e_improve,fl_lossy.immutable_cache,h_460,q_auto:good,w_460/v1721514796/a7f252e05e2413194928205f33ca9e3be4c1b4f0?_a=BACAEuDL&atc=e7cd1cfa",
       "https://images.getaroom-cdn.com/image/upload/s--jziWUiY6--/c_limit,e_improve,fl_lossy.immutable_cache,h_940,q_auto:good,w_940/v1721514800/8ddd27298d75c6fb731a8e99d3665103d4a0327c?_a=BACAEuDL&atc=e7cd1cfa",
@@ -35,6 +32,11 @@ const accomodations = [
       "https://images.getaroom-cdn.com/image/upload/s--hxLtiCsf--/c_limit,e_improve,fl_lossy.immutable_cache,h_460,q_auto:good,w_460/v1726832272/aeab71ff8cbcbd409f49f7524718c957e162a942?_a=BACAEuDL&atc=e7cd1cfa",
       "https://images.getaroom-cdn.com/image/upload/s--_uJjLwun--/c_limit,e_improve,fl_lossy.immutable_cache,h_460,q_auto:good,w_460/v1712675530/16231b1a0738b6ae31a55333e17af60c2ffd0de7?_a=BACAEuDL&atc=e7cd1cfa"
     ],
+    location: "Kg 213 St, Kigali, 250, Rwanda",
+    starsNo: 4.5,
+    reviewsNo: 518,
+    price: "$100/night",
+  
     description: `The Five to Five Hotel offers amenities such as free Wi-Fi, a fitness center, a rooftop terrace, a restaurant, and a bar.`,
   },
   {
