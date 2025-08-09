@@ -7,10 +7,53 @@ const AccomodationDetails = () => {
   const { id } = useParams();
   const accomodation = all_accomodations.find(a => a.id === Number(id));
   const [selectedImage, setSelectedImage] = useState(0);
+  const [showModal, setShowModal] = useState(false);
 
+  // Define allImages early, with fallback for when accomodation is null
+  const allImages = accomodation ? [accomodation.image, ...(accomodation.gallery || [])].filter(img => img) : [];
+
+  const handleImageClick = (index) => {
+    setSelectedImage(index);
+  };
+
+  const openModal = () => {
+    setShowModal(true);
+  };
+
+  const closeModal = () => {
+    setShowModal(false);
+  };
+
+  const nextImage = () => {
+    setSelectedImage(prev => prev < allImages.length - 1 ? prev + 1 : 0);
+  };
+
+  const prevImage = () => {
+    setSelectedImage(prev => prev > 0 ? prev - 1 : allImages.length - 1);
+  };
+
+  // Add keyboard navigation
+  React.useEffect(() => {
+    const handleKeyPress = (e) => {
+      if (showModal && allImages.length > 0) {
+        if (e.key === 'Escape') {
+          setShowModal(false);
+        }
+        if (e.key === 'ArrowRight') {
+          setSelectedImage(prev => prev < allImages.length - 1 ? prev + 1 : 0);
+        }
+        if (e.key === 'ArrowLeft') {
+          setSelectedImage(prev => prev > 0 ? prev - 1 : allImages.length - 1);
+        }
+      }
+    };
+    
+    window.addEventListener('keydown', handleKeyPress);
+    return () => window.removeEventListener('keydown', handleKeyPress);
+  }, [showModal, allImages.length]);
+
+  // Early return AFTER all hooks are defined
   if (!accomodation) return <div className="not-found">Accommodation not found</div>;
-
-  const allImages = [accomodation.image, ...(accomodation.gallery || [])].filter(img => img);
 
   return (
     <React.Fragment>
@@ -30,6 +73,8 @@ const AccomodationDetails = () => {
                   src={allImages[selectedImage]} 
                   alt={accomodation.title}
                   className="main-image"
+                  onClick={openModal}
+                  style={{ cursor: 'pointer' }}
                 />
                 <div className="image-overlay">
                   <div className="overlay-info">
@@ -47,7 +92,7 @@ const AccomodationDetails = () => {
                       <span className="reviews">({accomodation.reviewsNo} reviews)</span>
                     </div>
                   </div>
-                  <button className="show-all-photos-btn">
+                  <button className="show-all-photos-btn" onClick={openModal}>
                     <i className="fas fa-images"></i>
                     Show all photos
                   </button>
@@ -61,7 +106,7 @@ const AccomodationDetails = () => {
                   <div 
                     key={index} 
                     className={`grid-image ${index === 3 ? 'last-image' : ''}`}
-                    onClick={() => setSelectedImage(index + 1)}
+                    onClick={() => handleImageClick(index + 1)}
                   >
                     <img src={image} alt={`View ${index + 2}`} />
                     {index === 3 && allImages.length > 5 && (
@@ -111,7 +156,7 @@ const AccomodationDetails = () => {
                     <div 
                       key={index} 
                       className={`gallery-item ${selectedImage === index ? 'active' : ''}`}
-                      onClick={() => setSelectedImage(index)}
+                      onClick={() => handleImageClick(index)}
                     >
                       <img src={image} alt={`Gallery ${index + 1}`} />
                     </div>
@@ -213,6 +258,51 @@ const AccomodationDetails = () => {
             </div>
           </div>
         </div>
+
+        {/* Image Modal */}
+        {showModal && (
+          <div className="image-modal" onClick={closeModal}>
+            <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+              <button className="modal-close" onClick={closeModal}>
+                <i className="fas fa-times"></i>
+              </button>
+              <div className="modal-image-container">
+                <img 
+                  src={allImages[selectedImage]} 
+                  alt={accomodation.title}
+                  className="modal-image"
+                />
+              </div>
+              <div className="modal-thumbnails">
+                {allImages.map((image, index) => (
+                  <div 
+                    key={index}
+                    className={`modal-thumb ${selectedImage === index ? 'active' : ''}`}
+                    onClick={() => setSelectedImage(index)}
+                  >
+                    <img src={image} alt={`Thumbnail ${index + 1}`} />
+                  </div>
+                ))}
+              </div>
+              <div className="modal-navigation">
+                <button 
+                  className="nav-btn prev"
+                  onClick={prevImage}
+                  title="Previous image (←)"
+                >
+                  <i className="fas fa-chevron-left"></i>
+                </button>
+                <button 
+                  className="nav-btn next"
+                  onClick={nextImage}
+                  title="Next image (→)"
+                >
+                  <i className="fas fa-chevron-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </React.Fragment>
   );
