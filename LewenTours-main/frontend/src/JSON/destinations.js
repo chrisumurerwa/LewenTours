@@ -10,6 +10,7 @@ const destinations = [
       dest_details:{
         link: "kigali",
         background_image:
+        
           "https://res.cloudinary.com/dnqhrr6jk/image/upload/f_auto,q_auto/v1/Lewen%20Tours/ad0unircafpnqt58vmyy",
         description: `Step into the heart of Rwanda, where Kigali, its capital, pulsates with a captivating blend of modernity and cultural heritage. Nestled amidst verdant hills and serene lakes, this city awakens the senses with its vibrant energy and warm hospitality.
         <br /><br />

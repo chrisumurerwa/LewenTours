@@ -14,13 +14,14 @@ function Footer() {
             <Link to="/top10s">Top 10 Lists</Link>
           </p>
           <p>
-            <Link to="/accomodations">Accomodations</Link>
+            <Link to="/hotels"> Hotels</Link>
+          </p>
+         
+          <p>
+            <Link to="/apartments">Apartments</Link>
           </p>
           <p>
-            <Link to="/flights">Flights</Link>
-          </p>
-          <p>
-            <Link to="/traveltips">Travel tips</Link>
+            <Link to="/flights">Flights</Link> 
           </p>
           <p>
             <Link to="/about">About Us</Link>
