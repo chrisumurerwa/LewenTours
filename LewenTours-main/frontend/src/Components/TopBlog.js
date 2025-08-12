@@ -13,21 +13,21 @@ function TopBlog() {
           />
         </div>
         <div className="text-right">
-          <h1>Embrace the Thrill of the Unknown</h1>
+          <h1>Enjoy comfort that goes beyond expectations</h1>
           <p className="paragraph1">
-            Are you tired of the typical tourist destinations and looking to
-            step out of your comfort zone? Adventure travel may be the perfect
-            solution for you! Here are four reasons why you should book an
-            adventure travel experience:
+             Are you tired of the same old travel routines and looking for something
+    more exciting? Whether it's a luxury hotel, a cozy apartment, or the
+    perfect flight, we make your journey unforgettable. Here’s why you should
+    book your next stay and flight with us:
           </p>
           <ul className="days-week">
             <li>
               <i className="fa-solid fa-check"></i>
-              <span>Connect with nature</span>
+              <span>Relax in our top-rated hotels and apartments</span>
             </li>
             <li>
               <i className="fa-solid fa-check"></i>
-              <span>Experience other cultures</span>
+              <span> Fly the easy way – seamless and worry-free</span>
             </li>
             <li>
               <i className="fa-solid fa-check"></i>
