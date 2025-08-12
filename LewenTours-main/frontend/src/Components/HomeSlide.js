@@ -1,6 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { register } from "swiper/element/bundle";
+
+// Import Swiper CSS
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 // register Swiper custom elements
 register();
@@ -8,17 +13,51 @@ register();
 function HomeSlide() {
 
   const navigate = useNavigate()
+  
+  useEffect(() => {
+    // Ensure Swiper is properly initialized
+    const swiperContainer = document.querySelector('swiper-container');
+    if (swiperContainer) {
+      console.log('Swiper container found:', swiperContainer);
+      
+      // Wait for Swiper to be ready
+      const checkSwiper = () => {
+        if (swiperContainer.swiper) {
+          console.log('Swiper instance found:', swiperContainer.swiper);
+          console.log('Swiper slides:', swiperContainer.swiper.slides);
+          console.log('Swiper autoplay:', swiperContainer.swiper.autoplay);
+          
+          // Force Swiper to update and start autoplay
+          swiperContainer.swiper.update();
+          if (swiperContainer.swiper.autoplay) {
+            swiperContainer.swiper.autoplay.start();
+            console.log('Autoplay started');
+          }
+        } else {
+          console.log('Swiper not ready yet, retrying...');
+          setTimeout(checkSwiper, 100);
+        }
+      };
+      
+      checkSwiper();
+    } else {
+      console.log('Swiper container not found');
+    }
+  }, []);
+
   return (
     <section id="home">
       <div className="swipper_container">
         <swiper-container
           slides-per-view="1"
-          speed="10000"
+          speed="2000"
           loop="true"
-          css-mode="true"
-          navigation="false"
+          navigation="true"
           pagination="true"
-          autoplay="true"
+          effect="slide"
+          autoplay-delay="15000"
+          autoplay-disable-on-interaction="false"
+          autoplay-pause-on-mouse-enter="true"
         >
           <swiper-slide>
             <div className="swipper_element">

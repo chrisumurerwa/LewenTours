@@ -23,7 +23,12 @@ const Hotels = () => {
         <section id="hotels">
             <div className="accomodation_container">
                 <div className="sticky_card">
-                    <h2 className="title">hotels</h2>
+                    {/* <h1 className="title" style={{ textAlign: 'center', margin: 0 }}>Hotels</h1> */}
+                </div>
+                <div className="page-header" style={{marginBottom: '16px', textAlign: 'center'}}>
+                  <div className="header-content">
+                    <h1 className="page-title" style={{margin: 0, marginTop: '15px'}}>Available Hotels</h1>
+                  </div>
                 </div>
                 <div className="main_content">
                     <MainContent category="Hotels" />

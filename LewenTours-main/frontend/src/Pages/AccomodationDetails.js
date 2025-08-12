@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import all_accomodations from "../JSON/accomodations";
+import "./AccomodationGallery.css";
 
 const AccomodationDetails = () => {
   const { id } = useParams();
@@ -78,7 +79,6 @@ const AccomodationDetails = () => {
                 />
                 <div className="image-overlay">
                   <div className="overlay-info">
-                    <h1 className="accommodation-title">{accomodation.title}</h1>
                     <div className="location-badge">
                       <i className="fas fa-map-marker-alt"></i>
                       <span>{accomodation.location}</span>
@@ -92,10 +92,17 @@ const AccomodationDetails = () => {
                       <span className="reviews">({accomodation.reviewsNo} reviews)</span>
                     </div>
                   </div>
-                  <button className="show-all-photos-btn" onClick={openModal}>
-                    <i className="fas fa-images"></i>
-                    Show all photos
-                  </button>
+                  <button className="show-all-photos-btn" onClick={openModal}>Show all photos</button>
+                </div>
+              </div>
+              
+              {/* Hotel Title - Now below the image */}
+              <div className="hotel-title-section">
+                <h1 className="hotel-title">{accomodation.title}</h1>
+                <div className="hotel-subtitle">
+                  <span className="property-type">{accomodation.category}</span>
+                  <span className="separator">•</span>
+                  <span className="location-short">{accomodation.location.split(',')[0]}</span>
                 </div>
               </div>
             </div>
@@ -158,7 +165,7 @@ const AccomodationDetails = () => {
                       className={`gallery-item ${selectedImage === index ? 'active' : ''}`}
                       onClick={() => handleImageClick(index)}
                     >
-                      <img src={image} alt={`Gallery ${index + 1}`} />
+                      <img className="gallery-image" src={image} alt={`Gallery ${index + 1}`} loading="lazy" decoding="async" />
                     </div>
                   ))}
                 </div>
@@ -193,6 +200,8 @@ const AccomodationDetails = () => {
                   </div>
                 </div>
               </div>
+
+              
             </div>
 
             {/* Right Column - Booking Sidebar */}
@@ -230,12 +239,11 @@ const AccomodationDetails = () => {
                       <option value="2">2 guests</option>
                       <option value="3">3 guests</option>
                       <option value="4">4 guests</option>
+                    
                     </select>
                   </div>
 
-                  <button className="book-now-btn">
-                    Reserve
-                  </button>
+                  <button className="book-now-btn">Reserve</button>
                   
                   <p className="booking-note">You won't be charged yet</p>
                 </div>
@@ -254,6 +262,8 @@ const AccomodationDetails = () => {
                     <span>${parseInt(accomodation.price.replace(/\D/g, '')) + 15}</span>
                   </div>
                 </div>
+
+                
               </div>
             </div>
           </div>

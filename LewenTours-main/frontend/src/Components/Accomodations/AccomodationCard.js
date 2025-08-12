@@ -1,7 +1,27 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const AccomodationCard = ({ accomodation, viewMode = 'list' }) => {
   const isGrid = viewMode === 'grid';
+  const navigate = useNavigate();
+  
+  const handleShowPrices = () => {
+    try {
+      console.log('Show prices clicked for:', accomodation.title);
+      console.log('Accommodation data:', accomodation);
+      
+      // Navigate to booking page with accommodation details
+      navigate('/booking', { 
+        state: { 
+          selectedAccommodation: accomodation,
+          showPrices: true 
+        } 
+      });
+      
+      console.log('Navigation successful to /booking');
+    } catch (error) {
+      console.error('Error navigating to booking page:', error);
+    }
+  };
   
   return (
     <div className={`accomodation-card ${isGrid ? 'grid-view' : 'list-view'}`}>
@@ -80,7 +100,7 @@ const AccomodationCard = ({ accomodation, viewMode = 'list' }) => {
               <i className="fas fa-info-circle"></i>
               View details
             </Link>
-            <button className="show-prices-btn">
+            <button className="show-prices-btn" onClick={handleShowPrices}>
               <i className="fas fa-dollar-sign"></i>
               Show prices
             </button>
